@@ -1,0 +1,17 @@
+<%- include('partials/head.ejs') %>
+
+    <div class="container my-3 border rounded w-50 p-5">
+        <form action="/new" method="post" class="w-100 mx-auto">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" class="form-control" id="name" placeholder="Your name" name="user">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Message:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" name="text" rows="3"></textarea>
+            </div>
+            <button class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+<%- include("partials/foot.ejs") %>
